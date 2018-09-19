@@ -10,6 +10,7 @@
 		},
 		"files": [
 		     "settings.php",
+         "routes/admin/routes.php"
 		     "routes/routes.php"
 		]
     }
