@@ -10,6 +10,7 @@ class ComposerStaticInit6c27ff79bda4702d659e0ff2b0593770
         'fc73bab8d04e21bcdda37ca319c63800' => __DIR__ . '/..' . '/mikecao/flight/flight/autoload.php',
         '5b7d984aab5ae919d3362ad9588977eb' => __DIR__ . '/..' . '/mikecao/flight/flight/Flight.php',
         'f190dbc3b76eb8deddc7e24087abec59' => __DIR__ . '/../..' . '/settings.php',
+        '5e4dbe360076490bbf84940eeb4eab7e' => __DIR__ . '/../..' . '/routes/admin/routes.php',
         '3e2e16951008fcc7586f2b52bc1e3e11' => __DIR__ . '/../..' . '/routes/routes.php',
     );
 

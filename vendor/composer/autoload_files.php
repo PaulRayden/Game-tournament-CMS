@@ -9,5 +9,6 @@ return array(
     'fc73bab8d04e21bcdda37ca319c63800' => $vendorDir . '/mikecao/flight/flight/autoload.php',
     '5b7d984aab5ae919d3362ad9588977eb' => $vendorDir . '/mikecao/flight/flight/Flight.php',
     'f190dbc3b76eb8deddc7e24087abec59' => $baseDir . '/settings.php',
+    '5e4dbe360076490bbf84940eeb4eab7e' => $baseDir . '/routes/admin/routes.php',
     '3e2e16951008fcc7586f2b52bc1e3e11' => $baseDir . '/routes/routes.php',
 );
