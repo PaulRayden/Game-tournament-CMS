@@ -1,6 +1,11 @@
 <?php
     
     Flight::route('/', function(){
-        Flight::render('index', array('title' => 'Flight'));
+        if(!isset($_SESSION['user']))
+        {
+            Flight::render('login', array('title' => 'Войти в систему')); 
+        }else{
+            Flight::render('index', array('title' => 'Flight')); 
+        }
     });
     
