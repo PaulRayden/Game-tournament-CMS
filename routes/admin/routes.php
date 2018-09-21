@@ -7,3 +7,7 @@ Flight::route('/panel', function(){
 Flight::route('/panel/login', function(){
 	Flight::render('panel/login', array('title' => 'Авторизация - Панель администратора'));
 });
+
+Flight::route('POST /panel/login', function(){
+	Controller\AuthController::login($_POST['email'],$_POST['password']);
+});
