@@ -11,7 +11,7 @@
 
           <a id="login_panel-button" class="btn btn-elegant w-100" href="#">Войти через steam</a>
           <a id="login_panel-button" class="btn btn-primary w-100" href="#">Войти</a>
-          <a class="btn btn-primary w-100" href="/register">Регистрация</a>
+          <a class="btn btn-primary w-100" href="/register">Регистрация <i class="fa fa-arrow-right font-weight-bold" aria-hidden="true"></i></a>
 
 
         </form>
