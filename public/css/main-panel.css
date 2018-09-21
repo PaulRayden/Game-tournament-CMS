@@ -2,3 +2,8 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
+.auth-panel{
+ margin-top: 100px !important;
+ max-width: 400px;
+ margin: 0 auto;
+}
