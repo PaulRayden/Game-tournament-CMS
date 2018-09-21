@@ -1,4 +1,4 @@
-<?php Flight::render('panel/layouts/header', array('title' => $title)); ?>
+<?php Flight::render('layouts/header', array('title' => $title)); ?>
 <body>
   <div class="container">
     <div class="card auth-panel" >
@@ -19,4 +19,4 @@
     </div>
   </div>
 </body>
-<?php Flight::render('panel/layouts/footer'); ?>
+<?php Flight::render('layouts/footer'); ?>
