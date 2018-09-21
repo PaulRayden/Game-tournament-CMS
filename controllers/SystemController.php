@@ -12,4 +12,9 @@ class SystemController
         echo '</pre>';
     }
 
+    protected static function json($array)
+    {
+        return json_encode($array);
+    }
+
 }
