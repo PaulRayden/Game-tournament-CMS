@@ -7,7 +7,12 @@ $('#login_panel-button').click(function() {
         dataType : 'JSON',
         data: data,
         success: function(data) {
-            alert(data.message);
+            if(data.status == 'error')
+            {
+                toastr.error(data.message);
+            }else{
+                toastr.success(data.message);
+            }
         }
     });
 });
@@ -21,7 +26,12 @@ $('#register_panel-button').click(function() {
         dataType : 'JSON',
         data: data,
         success: function(data) {
-            alert(data.message);
+            if(data.status == 'error')
+            {
+                toastr.error(data.message);
+            }else{
+                toastr.success(data.message);
+            }
         }
     });
 });
