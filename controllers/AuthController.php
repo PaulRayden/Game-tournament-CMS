@@ -46,7 +46,7 @@ class AuthController extends SystemController
         }
         if ($user){
             echo self::json([
-                'message' => 'Такая почта уже зарегистрирована',
+                'message' => 'Такая почта уже существует',
                 'status'  => 'error'
             ]);
             exit();
@@ -89,7 +89,7 @@ class AuthController extends SystemController
         Auth::createAccount($name,$email,$password);
 
         echo self::json([
-            'message' => 'Вы успежно зарегистрировались',
+            'message' => 'Вы зарегистрировались',
             'status'  => 'success'
         ]);
         exit();
