@@ -9,9 +9,10 @@
 			"Models\\": "models/"
 		},
 		"files": [
-		     "settings.php",
-         "routes/admin/routes.php",
-		     "routes/routes.php"
+			"settings.php",
+			"routes/admin/routes.php",
+			"routes/simple_routes.php",
+			"routes/ajax_routes.php"
 		]
     }
 }

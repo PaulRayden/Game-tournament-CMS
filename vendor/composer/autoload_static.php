@@ -11,7 +11,8 @@ class ComposerStaticInit6c27ff79bda4702d659e0ff2b0593770
         '5b7d984aab5ae919d3362ad9588977eb' => __DIR__ . '/..' . '/mikecao/flight/flight/Flight.php',
         'f190dbc3b76eb8deddc7e24087abec59' => __DIR__ . '/../..' . '/settings.php',
         '5e4dbe360076490bbf84940eeb4eab7e' => __DIR__ . '/../..' . '/routes/admin/routes.php',
-        '3e2e16951008fcc7586f2b52bc1e3e11' => __DIR__ . '/../..' . '/routes/routes.php',
+        'a2baab9cac5a28c0a802b0eea966f232' => __DIR__ . '/../..' . '/routes/simple_routes.php',
+        '1642cdfafa94d15e01dfd39b02ee57df' => __DIR__ . '/../..' . '/routes/ajax_routes.php',
     );
 
     public static $prefixLengthsPsr4 = array (
