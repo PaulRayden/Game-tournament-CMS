@@ -1,6 +1,7 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+    background: #32408e !important;
 }
 .auth-panel{
  margin-top: 100px !important;
