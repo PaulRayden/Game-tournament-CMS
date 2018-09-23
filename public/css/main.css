@@ -7,3 +7,7 @@ body{
  max-width: 400px;
  margin: 0 auto;
 }
+.body-404{
+    background: url('../img/boom.jpg')center center fixed no-repeat;
+    background-size: cover;
+}
