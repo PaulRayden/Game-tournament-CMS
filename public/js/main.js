@@ -11,7 +11,7 @@ $('#login_panel-button').click(function() {
             {
                 toastr.error(data.message);
             }else{
-                toastr.success(data.message);
+                setTimeout(window.location.href = "/",2000);
             }
         }
     });
