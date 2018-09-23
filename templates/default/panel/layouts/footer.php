@@ -3,7 +3,7 @@
 <script type="text/javascript" src="/js/mb.js">
 
 </script>
-  <script>
-    <?php include(__DIR__.'/assets/js/main.js'); ?>
+  <script >
+    <?php include(__DIR__ . '/assets/js/main.js'); ?>
   </script>
 </html>
