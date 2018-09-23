@@ -6,7 +6,7 @@ Flight::route('POST /auth/login', function(){
         $_POST['password']
     );
 });
-Flight::route('GET|POST /auth/register', function(){
+Flight::route('POST /auth/register', function(){
 
 
     Controllers\AuthController::register(
