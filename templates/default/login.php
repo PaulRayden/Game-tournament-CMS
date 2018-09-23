@@ -10,7 +10,7 @@
           <input type="password" class="form-control form-control-lg mb-4" name="password" placeholder="Пароль">
 
           <a id="login_panel-button" class="btn btn-elegant w-100" href="#">Войти через steam</a>
-          <a id="login_panel-button" class="btn btn-primary w-100" href="#">Войти</a>
+          <a id="login_panel-button" class="btn btn-primary w-100" >Войти</a>
           <a class="btn btn-primary w-100" href="/register">Регистрация <i class="fa fa-arrow-right font-weight-bold" aria-hidden="true"></i></a>
 
 
