@@ -25,3 +25,12 @@
             Flight::redirect('/');
         }
     });
+    Flight::route('/logout', function(){
+        session_unset($_SESSION['user']);
+        session_destroy();
+        Flight::redirect('login');
+    });
+
+    Flight::map('notFound', function(){
+        Flight::render('404', array('title' => 'Страница не найдена'));
+    });
