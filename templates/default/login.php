@@ -4,7 +4,6 @@
     <div class="card auth-panel" >
       <div class="card-body px-lg-5 pt-0">
         <form id="login_panel-form" method="post" class="text-center">
-
           <input type="email" class="form-control form-control-lg mb-4 mt-4 " name="email" placeholder="E-mail">
 
           <input type="password" class="form-control form-control-lg mb-4" name="password" placeholder="Пароль">
