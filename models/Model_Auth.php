@@ -15,6 +15,7 @@ class Model_Auth extends Model
       $user->name = $name;
       $user->email = $email;
       $user->password = $password;
+      $user->role = 'user';
       R::store($user);
   }
 
