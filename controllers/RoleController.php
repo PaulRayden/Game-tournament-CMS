@@ -19,7 +19,7 @@ class RoleController
         {
             Flight::render('panel/layouts/no_access', array('title' => 'У вас нет доступа к этой странице'));
             exit();
-        }else{}
+        }
 
     }
 
