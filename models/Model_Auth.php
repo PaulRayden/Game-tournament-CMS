@@ -16,7 +16,9 @@ class Model_Auth extends Model
       $user->email = $email;
       $user->password = $password;
       $user->role = 'user';
+      $user->steamid = ' ';
       R::store($user);
+
   }
 
 
@@ -31,5 +33,13 @@ class Model_Auth extends Model
   public static function FindEmail($email)
   {
       return R::findOne('users','email = ?',array($email));
+  }
+  public static function FindSteamId($steam_id)
+  {
+        return R::findOne('users','steamid = ?',array($steam_id));
+  }
+  public static function FindId($id)
+  {
+        return R::findOne('users','id = ?',array($id));
   }
 }
