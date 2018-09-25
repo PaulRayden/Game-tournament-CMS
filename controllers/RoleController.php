@@ -17,7 +17,7 @@ class RoleController
     {
         if ($_SESSION['user']->role != $role)
         {
-            Flight::render('panel/layouts/no_access', array('title' => 'У вас нет доступа к этой странице'));
+            Flight::render('no_access', array('title' => 'У вас нет доступа к этой странице'));
             exit();
         }
 
