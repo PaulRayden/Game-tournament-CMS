@@ -11,3 +11,23 @@ body{
     background: url('../img/boom.jpg')center center fixed no-repeat;
     background-size: cover;
 }
+.no-access-body{
+    text-align: center;
+    background: url('../img/terror-1.jpg') center center fixed no-repeat;
+    background-size: cover;
+}
+.no-access-filter{
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    background: rgba(16, 16, 16, 0.84);
+}
+.no-access-h1{
+    text-align: center;
+    margin-top: 30vh;
+    color: white;
+    position: relative;
+    z-index:2;
+}
