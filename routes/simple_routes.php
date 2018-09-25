@@ -31,6 +31,8 @@
         Flight::redirect('login');
     });
 
+    Flight::route('/login/steam', array('Controllers\SteamController','loginSteam'));
+
     Flight::map('notFound', function(){
         Flight::render('404', array('title' => 'Страница не найдена'));
     });
