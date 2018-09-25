@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ba3ae2eb0d6636a3519019a9b88eeba",
+    "content-hash": "ae74f6a45a699815e9dd0439f2c80698",
     "packages": [
         {
             "name": "gabordemooij/redbean",
@@ -89,6 +89,52 @@
             "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
             "homepage": "http://flightphp.com",
             "time": "2017-10-20T01:46:56+00:00"
+        },
+        {
+            "name": "vikas5914/steam-auth",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vikas5914/steam-auth.git",
+                "reference": "cde1282bfa83a7ef95ba0cb83461dd65d734ce9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vikas5914/steam-auth/zipball/cde1282bfa83a7ef95ba0cb83461dd65d734ce9e",
+                "reference": "cde1282bfa83a7ef95ba0cb83461dd65d734ce9e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vikas5914\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vikas Kapadiya",
+                    "email": "vikas@kapadiya.net",
+                    "homepage": "https://www.kapadiya.net"
+                }
+            ],
+            "description": "A simple PHP Steam login and User Detail package",
+            "keywords": [
+                "steam",
+                "steam auth",
+                "steam login",
+                "steam user",
+                "steam-auth",
+                "steam-login",
+                "steam-user"
+            ],
+            "time": "2018-07-28T06:04:44+00:00"
         }
     ],
     "packages-dev": [],

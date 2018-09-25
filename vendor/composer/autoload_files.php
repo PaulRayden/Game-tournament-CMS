@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'fc73bab8d04e21bcdda37ca319c63800' => $vendorDir . '/mikecao/flight/flight/autoload.php',
     '5b7d984aab5ae919d3362ad9588977eb' => $vendorDir . '/mikecao/flight/flight/Flight.php',
+    'eed18608381e31fbc5f8871dbbdaf90d' => $baseDir . '/steam.php',
     'f190dbc3b76eb8deddc7e24087abec59' => $baseDir . '/settings.php',
     '5e4dbe360076490bbf84940eeb4eab7e' => $baseDir . '/routes/admin/routes.php',
     'a2baab9cac5a28c0a802b0eea966f232' => $baseDir . '/routes/simple_routes.php',
