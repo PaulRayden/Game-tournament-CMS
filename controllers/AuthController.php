@@ -25,18 +25,18 @@ class AuthController extends SystemController
     }
 
     /**
-     * @param $name
+     * @param $login
      * @param $email
      * @param $password
      * @param $password_verify
      */
-    public static function register($name, $email, $password, $password_verify)
+    public static function register($login, $email, $password, $password_verify)
     {
-        self::checkName($name);
+        self::checkLogin($login);
         self::ValidationEmail($email);
         self::checkEmail($email);
         $hash = self::passwordHandler($password,$password_verify);
-        self::createAccount($name,$email,$hash);
+        self::createAccount($login,$email,$hash);
 
     }
 
@@ -137,18 +137,36 @@ class AuthController extends SystemController
     }
 
     /**
-     * @param $name
+     * @param $login
      */
-    protected static function checkName($name)
+    protected static function checkLogin($login)
     {
-
-        if ($name == ''){
+        $user = Auth::FindLogin($login);
+        if ($login == ''){
             echo self::json([
-                'message' => 'Введите имя',
+                'message' => 'Введите логин',
                 'status'  => 'error'
             ]);
             exit();
         }
+        if ($user){
+            echo self::json([
+                'message' => 'Такой логин уже существует',
+                'status'  => 'error'
+            ]);
+            exit();
+        }
+
+        if(preg_match('/[^A-Za-z0-9]/', $login))
+        {
+            echo self::json([
+                'message' => 'Логин содержит недопустимые символы!',
+                'status'  => 'error'
+            ]);
+            exit();
+        }
+
+
     }
 
     /**

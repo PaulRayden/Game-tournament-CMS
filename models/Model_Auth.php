@@ -9,10 +9,10 @@ class Model_Auth extends Model
 {
 
   // Создание аккаунта пользователя
-  public static function createAccount($name,$email,$password)
+  public static function createAccount($login,$email,$password)
   {
       $user = R::dispense('users');
-      $user->name = $name;
+      $user->login = $login;
       $user->email = $email;
       $user->password = $password;
       $user->role = 'user';
@@ -23,12 +23,10 @@ class Model_Auth extends Model
 
 
   //Поиск пользователя по имени в таблице users
-  public static function FindName($name)
+  public static function FindLogin($login)
   {
-      return R::findOne('users','name = ?',array($name));
+      return R::findOne('users','login = ?',array($login));
   }
-
-
   //Поиск пользователя по почте в таблице users
   public static function FindEmail($email)
   {

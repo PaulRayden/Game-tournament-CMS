@@ -10,7 +10,7 @@ Flight::route('POST /auth/register', function(){
 
 
     Controllers\AuthController::register(
-        $_POST['name'],
+        $_POST['login'],
         $_POST['email'],
         $_POST['password'],
         $_POST['password_verify']
