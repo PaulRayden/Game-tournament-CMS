@@ -1,6 +1,7 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+    background: #202128 !important;
 }
 .auth-panel{
  margin-top: 100px !important;
@@ -30,4 +31,22 @@ body{
     color: white;
     position: relative;
     z-index:2;
+}
+header{
+    color: white;
+    padding: 15px 0px;
+    background-image: linear-gradient(to right, #2D2E3D 35%, #0A0B10 100%);
+}
+.drop-user-menu{
+    transform: translate3d(-110px, 30px, 0px) !important;
+}
+.side-nav{
+    margin-top: 60px!important;
+    box-shadow: none !important;
+}
+#sidenav-overlay{
+    background-color: transparent !important;
+}
+.rgba-blue-strong, .rgba-blue-strong:after {
+    background-color: rgb(45, 46, 61) !important;
 }
