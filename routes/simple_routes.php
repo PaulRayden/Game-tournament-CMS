@@ -4,7 +4,10 @@
         {
             Flight::redirect('/login');
         }else{
-            Flight::render('index', array('title' => 'Главная')); 
+            Flight::render('index', array(
+                'title' => 'Главная',
+                'session' => $_SESSION['user']
+            ));
         }
     });
 
