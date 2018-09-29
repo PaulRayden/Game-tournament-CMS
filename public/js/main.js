@@ -1,3 +1,5 @@
+$('.button-collapse').sideNav('show');
+
 
 $('#login_panel-button').click(function() {
     var data = $('#login_panel-form').serializeArray();
@@ -35,3 +37,5 @@ $('#register_panel-button').click(function() {
         }
     });
 });
+
+
