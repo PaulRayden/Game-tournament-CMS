@@ -1,6 +1,3 @@
-$('.button-collapse').sideNav('show');
-
-
 $('#login_panel-button').click(function() {
     var data = $('#login_panel-form').serializeArray();
     $.ajax({
@@ -38,4 +35,4 @@ $('#register_panel-button').click(function() {
     });
 });
 
-
+$('.button-collapse').sideNav('show');
