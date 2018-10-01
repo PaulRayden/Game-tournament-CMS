@@ -8,3 +8,23 @@ body{
  max-width: 400px;
  margin: 0 auto;
 }
+.nav-panel{
+    z-index: 2;
+    position: fixed;
+    font-weight: 600;
+    width: 100%;
+    padding: 0px 20px;
+}
+.site-container{
+    padding-top: 100px;
+}
+#site{
+    width: 100%;
+}
+.panel-card-header{
+    background: #1C2A48 !important;
+    border-radius: 0px !important;
+}
+.color-white{
+    color: white !important;
+}
