@@ -1,16 +1,21 @@
 <?php
-    Flight::route('/', function(){
-        if(!isset($_SESSION['user']))
-        {
-            Flight::redirect('/login');
-        }else{
-            Flight::render('index', array(
-                'title' => 'Главная',
-                'session' => $_SESSION['user']
-            ));
-        }
-    });
 
+    use Controllers\AuthController as Ac;
+
+    Flight::route('/', function(){
+        Ac::authorized();
+        Flight::render('index', array(
+            'title' => 'Главная',
+            'session' => $_SESSION['user']
+        ));
+    });
+    Flight::route('/user/@login', function($login){
+        Ac::authorized();
+        Flight::render('profile', array(
+            'title' => 'Профиль '.$login,
+            'session' => $_SESSION['user']
+        ));
+    });
     Flight::route('/login', function(){
         if(!isset($_SESSION['user']))
         {
