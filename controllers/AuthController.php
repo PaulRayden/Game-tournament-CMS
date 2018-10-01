@@ -3,7 +3,7 @@
 namespace Controllers;
 
 use Models\Model_Auth as Auth;
-
+use Flight;
 
 class AuthController extends SystemController
 {
@@ -255,5 +255,13 @@ class AuthController extends SystemController
             'status'  => 'success'
         ]);
         exit();
+    }
+    public static function authorized()
+    {
+        if (!isset($_SESSION['user']))
+        {
+            Flight::redirect('/login');
+            exit();
+        }
     }
 }
