@@ -10,6 +10,6 @@ class PageController extends RoleController
     public static function index()
     {
         self::role('admin');
-        Flight::render('panel/index', array('title' => 'Панель администратора - Главная'));
+        Flight::render('panel/index', array('title' => 'Панель управления - Главная'));
     }
 }
