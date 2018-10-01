@@ -25,9 +25,6 @@
         <span class="navbar-text white-text">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a  class="nav-link" href="/panel/profile">Профиль</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="/panel/settings">Настройки</a>
             </li>
             <li class="nav-item">
